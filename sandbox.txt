@@ -1,0 +1,93 @@
+    /*
+     * Exercise 2 : The number of recorded vehicles
+     */
+    public static String exercise2(ArrayList<Car> cars) {
+        return cars.size() + " cars recorded";
+    }
+
+    /*
+     * Exercise 3 : The number of vehicles that passed the exit point before 09:00
+     */
+    public static String exercise3(ArrayList<Car> cars) {
+        int nCars9 = 0;
+        for(Car car: cars) {
+            if(car.getExitHour() < 9) {
+                nCars9++;
+            }
+        }
+
+        return nCars9 + " vehicles passed the exit point before 09:00";
+    }
+
+    /*
+     * Exercise 4 :
+     *    The number of vehicles that passed the entry point and the traffic intensity
+     *    in the timeframe (hour, minute) given as argument
+     */
+    public static String exercise4(ArrayList<Car> cars, int userHour, int userMinute) {
+        String ret0 = "In hour, minute : " + userHour + ", " + userMinute + " : \n";
+
+        int nCarsMinute = 0;
+        for(Car car: cars) {
+            if(car.getEntryHour() == userHour && car.getEntryMinute() == userMinute) {
+                nCarsMinute++;
+            }
+        }
+        String ret1 = nCarsMinute + " vehicles passed the entry point. \n";
+
+        int presentMinute = 0;
+        for(Car car: cars) {
+            // Current car has passed the entry after the start of the minute
+            if((car.getEntryHour() == userHour && car.getEntryMinute() == userMinute) || (car.getExitHour() == userHour && car.getExitMinute() == userMinute)) {
+                presentMinute++;
+            }
+        }
+        double trafficIntensityMinute = presentMinute/10.0;
+
+        String ret2 = "The traffic intensity is " + trafficIntensityMinute;
+        return ret0 + ret1 + ret2;
+    }
+
+    /*
+     * Exercise 5 : The fastest vehicle, its speed and its overtakes
+     */
+    public static String exercise5(ArrayList<Car> cars) {
+        Car fastestCar = cars.get(0);
+        double fastestSpeed = fastestCar.getSpeed();
+        for(Car car: cars) {
+            if(car.getSpeed() > fastestSpeed) {
+                fastestCar = car;
+                fastestSpeed = car.getSpeed();
+            }
+        }
+        String ret1 = "The fastest vehicle is " + fastestCar.getLicensePlate() + " \n";
+        String ret2 = "It has an average speed of " + fastestSpeed + " \n";
+
+        int overtakes = 0;
+        for(Car car: cars) {
+            // Current car has passed the entry point before the fastest car AND fastest car has passed the exit point before the current car
+            if(car != fastestCar) {
+                if(car.getEntryAllSeconds() <= fastestCar.getEntryAllSeconds() && car.getExitAllSeconds() >= fastestCar.getExitAllSeconds()) {
+                    overtakes++;
+                }
+            }
+        }
+        String ret3 = "It has overtaken " + overtakes + " cars";
+
+        return ret1 + ret2 + ret3;
+    }
+
+    /*
+     * Exercise 6 : The percentage of the vehicles that exceeded the maximum speed limit (90 km/h)
+     */
+    public static String exercise6(ArrayList<Car> cars) {
+        int nExceed = 0;
+        for(Car car: cars) {
+            if(car.getSpeed() > 90.0) {
+                nExceed++;
+            }
+        }
+        double averageExceed = (float) nExceed / (float) cars.size() * 100.0;
+
+        return averageExceed + "% of the vehicles were speeding.";
+    }
