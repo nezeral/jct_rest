@@ -1,9 +1,19 @@
 package com.example.repository;
 
 import com.example.models.Measure;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface MeasureRepository extends JpaRepository<Measure, Long> {
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.CrudRepository;
+
+public interface MeasureRepository extends CrudRepository<Measure, Long>, JpaSpecificationExecutor<Measure> {
+
+    /**
+     * Returns a page of {@link Measure}s with the given licensePlate.
+     *
+     * @param licensePlate
+     * @return
+     */
+    Page<Measure> getByLicensePlate(String licensePlate, Pageable pageable);
 }
