@@ -2,8 +2,6 @@ package com.example.repository;
 
 import com.example.models.Measure;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
 
@@ -15,5 +13,5 @@ public interface MeasureRepository extends CrudRepository<Measure, Long>, JpaSpe
      * @param licensePlate
      * @return
      */
-    Page<Measure> findByLicensePlate(String licensePlate, Pageable pageable);
+    Measure findByLicensePlate(String licensePlate);
 }

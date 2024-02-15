@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MeasureServiceUnitTest" time="2.496" tests="3" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MeasureServiceUnitTest" time="2.321" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BE"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire/surefirebooter-20240215160422916_3.jar /Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire 2024-02-15T16-04-22_874-jvmRun1 surefire-20240215160422916_1tmp surefire_0-20240215160422916_2tmp"/>
+    <property name="sun.java.command" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire/surefirebooter-20240215173426301_3.jar /Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire 2024-02-15T17-34-26_262-jvmRun1 surefire-20240215173426301_1tmp surefire_0-20240215173426301_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/test-classes:/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/classes:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar:/Users/acaytan/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/acaytan/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/acaytan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/acaytan/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/acaytan/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/Users/acaytan/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/acaytan/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/acaytan/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar:/Users/acaytan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar:/Users/acaytan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar:/Users/acaytan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar:/Users/acaytan/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/Users/acaytan/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/Users/acaytan/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/Users/acaytan/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar:/Users/acaytan/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar:/Users/acaytan/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/acaytan/.m2/repository/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar:/Users/acaytan/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar:/Users/acaytan/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/acaytan/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/acaytan/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/acaytan/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/acaytan/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/acaytan/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/acaytan/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/acaytan/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/acaytan/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/acaytan/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/acaytan/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/acaytan/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/acaytan/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/acaytan/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/acaytan/.m2/repository/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar:/Users/acaytan/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/Users/acaytan/.m2/repository/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.2/spring-boot-starter-test-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar:/Users/acaytan/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar:/Users/acaytan/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/acaytan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/acaytan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/acaytan/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/acaytan/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/acaytan/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/acaytan/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/acaytan/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/acaytan/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/acaytan/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/acaytan/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/acaytan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/acaytan/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/acaytan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/acaytan/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/acaytan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/acaytan/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/acaytan/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/acaytan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/Users/acaytan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/acaytan/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/acaytan/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/acaytan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/acaytan/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/Users/acaytan/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/Users/acaytan/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/acaytan/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:"/>
@@ -33,7 +33,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire/surefirebooter-20240215160422916_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application/target/surefire/surefirebooter-20240215173426301_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -52,7 +52,7 @@
     <property name="user.dir" value="/Users/acaytan/Documents/github/java_cloud_training/jct_rest_application"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="5981"/>
+    <property name="PID" value="7495"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/acaytan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -64,9 +64,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="whenApplicationStarts_thenHibernateCreatesInitialRecords" classname="com.example.MeasureServiceUnitTest" time="0.486">
-    <system-out><![CDATA[16:04:23.272 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.MeasureServiceUnitTest]: MeasureServiceUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:04:23.316 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.App for test class com.example.MeasureServiceUnitTest
+  <testcase name="whenApplicationStarts_thenHibernateCreatesInitialRecords" classname="com.example.MeasureServiceUnitTest" time="0.478">
+    <system-out><![CDATA[17:34:26.635 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.MeasureServiceUnitTest]: MeasureServiceUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:34:26.676 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.App for test class com.example.MeasureServiceUnitTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -76,22 +76,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2024-02-15T16:04:23.480+01:00  INFO 5981 --- [           main] com.example.MeasureServiceUnitTest       : Starting MeasureServiceUnitTest using Java 21.0.2 with PID 5981 (started by acaytan in /Users/acaytan/Documents/github/java_cloud_training/jct_rest_application)
-2024-02-15T16:04:23.480+01:00  INFO 5981 --- [           main] com.example.MeasureServiceUnitTest       : No active profile set, falling back to 1 default profile: "default"
-2024-02-15T16:04:23.761+01:00  INFO 5981 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-15T16:04:23.784+01:00  INFO 5981 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
-2024-02-15T16:04:23.968+01:00  INFO 5981 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-02-15T16:04:24.056+01:00  INFO 5981 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:measuredb user=SA
-2024-02-15T16:04:24.057+01:00  INFO 5981 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-02-15T16:04:24.080+01:00  INFO 5981 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-15T16:04:24.110+01:00  INFO 5981 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-02-15T16:04:24.134+01:00  INFO 5981 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-15T16:04:24.250+01:00  INFO 5981 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-15T16:04:24.651+01:00  INFO 5981 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-15T16:04:24.756+01:00  INFO 5981 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-15T16:04:24.939+01:00  WARN 5981 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-15T16:04:25.090+01:00  INFO 5981 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:measuredb'
-2024-02-15T16:04:25.117+01:00  INFO 5981 --- [           main] com.example.MeasureServiceUnitTest       : Started MeasureServiceUnitTest in 1.74 seconds (process running for 2.16)
+2024-02-15T17:34:26.824+01:00  INFO 7495 --- [           main] com.example.MeasureServiceUnitTest       : Starting MeasureServiceUnitTest using Java 21.0.2 with PID 7495 (started by acaytan in /Users/acaytan/Documents/github/java_cloud_training/jct_rest_application)
+2024-02-15T17:34:26.825+01:00  INFO 7495 --- [           main] com.example.MeasureServiceUnitTest       : No active profile set, falling back to 1 default profile: "default"
+2024-02-15T17:34:27.086+01:00  INFO 7495 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15T17:34:27.110+01:00  INFO 7495 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-02-15T17:34:27.291+01:00  INFO 7495 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-15T17:34:27.368+01:00  INFO 7495 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:measuredb user=SA
+2024-02-15T17:34:27.369+01:00  INFO 7495 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-15T17:34:27.391+01:00  INFO 7495 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15T17:34:27.421+01:00  INFO 7495 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-15T17:34:27.436+01:00  INFO 7495 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-15T17:34:27.534+01:00  INFO 7495 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15T17:34:27.897+01:00  INFO 7495 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15T17:34:28.000+01:00  INFO 7495 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15T17:34:28.184+01:00  WARN 7495 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15T17:34:28.330+01:00  INFO 7495 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:measuredb'
+2024-02-15T17:34:28.356+01:00  INFO 7495 --- [           main] com.example.MeasureServiceUnitTest       : Started MeasureServiceUnitTest in 1.628 seconds (process running for 2.016)
 ]]></system-out>
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/acaytan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
@@ -99,85 +99,5 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="findMeasuresByLicensePlate" classname="com.example.MeasureServiceUnitTest" time="0.048"/>
-  <testcase name="saveMeasure" classname="com.example.MeasureServiceUnitTest" time="0.019">
-    <error message="could not execute statement [Unique index or primary key violation: &quot;PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), &apos;QPP263&apos;)&quot;; SQL statement:&#10;insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]] [insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [&quot;PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), &apos;QPP263&apos;)&quot;; SQL statement:&#10;insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]]" type="org.springframework.dao.DataIntegrityViolationException"><![CDATA[org.springframework.dao.DataIntegrityViolationException: 
-could not execute statement [Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), 'QPP263')"; SQL statement:
-insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]] [insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint ["PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), 'QPP263')"; SQL statement:
-insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]]
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
-	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:565)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:669)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:419)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy109.save(Unknown Source)
-	at com.example.controller.MeasureController.addMeasure(MeasureController.java:31)
-	at com.example.MeasureServiceUnitTest.saveMeasure(MeasureServiceUnitTest.java:47)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), 'QPP263')"; SQL statement:
-insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]] [insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?)]
-	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:107)
-	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
-	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
-	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2873)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1423)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:504)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2339)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1996)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
-	... 19 more
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), 'QPP263')"; SQL statement:
-insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
-	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
-	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
-	at org.h2.command.dml.Insert.update(Insert.java:135)
-	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
-	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
-	at org.h2.command.Command.executeUpdate(Command.java:256)
-	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
-	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
-	... 40 more
-]]></error>
-    <system-out><![CDATA[2024-02-15T16:04:25.674+01:00  WARN 5981 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2024-02-15T16:04:25.674+01:00 ERROR 5981 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.MEASURE(ID) ( /* key:1 */ 8, 0, 0, 5, 8, 436, 7, 8, CAST(1 AS BIGINT), 'QPP263')"; SQL statement:
-insert into measure (entry_hour,entry_millisecond,entry_minute,entry_second,exit_hour,exit_millisecond,exit_minute,exit_second,license_plate,id) values (?,?,?,?,?,?,?,?,?,?) [23505-224]
-]]></system-out>
-  </testcase>
+  <testcase name="findMeasuresByLicensePlate" classname="com.example.MeasureServiceUnitTest" time="0.037"/>
 </testsuite>

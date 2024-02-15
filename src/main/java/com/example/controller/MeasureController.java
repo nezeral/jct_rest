@@ -3,9 +3,6 @@ package com.example.controller;
 import com.example.models.Measure;
 import com.example.repository.MeasureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,12 +15,14 @@ public class MeasureController {
     private MeasureRepository measureRepository;
 
     @GetMapping(value = "/{licensePlate}")
-    public Page<Measure> getMeasureByLicensePlate(
-            @PathVariable("licensePlate") String licensePlate,
-            @RequestParam("page") int page,
-            @RequestParam("size") int size) {
-        Pageable pageable = PageRequest.of(page, size);
-        return measureRepository.findByLicensePlate(licensePlate, pageable);
+    public ResponseEntity<String> getMeasureByLicensePlate(@PathVariable("licensePlate") String licensePlate) {
+        Measure plateMeasure = measureRepository.findByLicensePlate(licensePlate);
+        if (plateMeasure == null) {
+            return new ResponseEntity<>("Nothing found", HttpStatus.BAD_REQUEST);
+        }
+        else {
+            return new ResponseEntity<>("Found : " + plateMeasure, HttpStatus.OK);
+        }
     }
 
     @PutMapping

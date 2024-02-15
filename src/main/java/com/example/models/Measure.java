@@ -21,4 +21,15 @@ public class Measure {
     private int exitSecond;
     private int exitMillisecond;
 
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public String toString() {
+        String licensePlate = "License Plate : " + this.licensePlate + "\n";
+        String entryTime = "Entry : " + this.entryHour + this.entryMinute + entrySecond + entryMillisecond + "\n";
+        String exitTime = "Exit : " + this.exitHour + this.exitMinute + exitSecond + exitMillisecond + "\n";
+        return licensePlate + entryTime + exitTime;
+    }
+
 }
