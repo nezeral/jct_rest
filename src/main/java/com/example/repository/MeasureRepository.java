@@ -15,5 +15,5 @@ public interface MeasureRepository extends CrudRepository<Measure, Long>, JpaSpe
      * @param licensePlate
      * @return
      */
-    Page<Measure> getByLicensePlate(String licensePlate, Pageable pageable);
+    Page<Measure> findByLicensePlate(String licensePlate, Pageable pageable);
 }
