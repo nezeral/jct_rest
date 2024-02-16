@@ -26,9 +26,14 @@ public class MeasureController {
     }
 
     @PutMapping
-    public ResponseEntity<Measure> addMeasure(@RequestBody Measure measure) {
-        Measure savedMeasure = measureRepository.save(measure);
-        return new ResponseEntity<>(savedMeasure, HttpStatus.CREATED);
+    public ResponseEntity<String> addMeasure(@RequestBody Measure measure) {
+        try {
+            Measure savedMeasure = measureRepository.save(measure);
+            return new ResponseEntity<>("Measure created with ID: " + savedMeasure.getId(), HttpStatus.CREATED);
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>("Failed to create measure: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 }

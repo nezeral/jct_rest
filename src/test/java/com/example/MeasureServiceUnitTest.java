@@ -11,8 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -37,11 +35,13 @@ public class MeasureServiceUnitTest {
         assertEquals(plateMeasures.getLicensePlate(), "QPP263");
     }
 
-/*    @Test
+    @Test
     public void saveMeasure() {
+        long nMeasureBefore = measureRepository.count();
         Measure measure = new Measure();
-        ResponseEntity<Measure> response = measureController.addMeasure(measure);
-        // assertEquals(response.getStatusCode(), HttpStatus.CREATED);
-        assertTrue(true);
-    }*/
+        ResponseEntity<String> response = measureController.addMeasure(measure);
+        long nMeasureAfter = measureRepository.count();
+        assertEquals(response.getStatusCode(), HttpStatus.CREATED);
+        assertTrue(nMeasureBefore < nMeasureAfter);
+    }
 }
